@@ -1,0 +1,144 @@
+<mjml>
+  <mj-head>
+    <mj-title>Email Preview</mj-title>
+    <mj-attributes>
+      <mj-section padding="0" />
+      <mj-column padding="0" />
+      <mj-image padding="0" />
+
+      <mj-text color="{{ data.color.gray }}" 
+               font-family="'Trebuchet MS', 'Arial', sans-serif"
+               font-size="17px"
+               line-height="22px"
+               padding-left="0"
+               padding-right="0"
+      />
+    </mj-attributes>
+    <mj-style inline="inline">
+      .unsubscribe-link{
+        color: #ffffff;
+      }
+    </mj-style>
+  </mj-head>
+  <mj-body background-color="{{ localColorPrimary }}">
+
+    <mj-section>
+      <mj-column>
+        <mj-spacer height="60px" />
+      </mj-column>
+    </mj-section>
+
+    <mj-section>
+      <mj-column>
+e       <mj-image width="50px" src="{{ data.global.prefix }}/process-{{ localColorString }}-icon.gif"></mj-image>
+      </mj-column>
+    </mj-section>
+
+    <mj-section>
+      <mj-column>
+        <mj-spacer height="30px" />
+      </mj-column>
+    </mj-section>
+
+    <mj-section>
+      <mj-column width="450px"
+                 background-color="{{ data.color.white }}"
+                 border-radius="10px"
+                 padding="40px 30px"
+      >
+      <mj-text>
+        {{ data.salesforce.recipientName }},
+        <br><br>
+        {% block copy %}{% endblock %}
+      </mj-text>
+      </mj-column>
+    </mj-section>
+
+    <mj-section>
+      <mj-column>
+        <mj-spacer height="30px" />
+      </mj-column>
+    </mj-section>
+
+    <mj-section full-width="full-width"
+                background-color="{{ localColorAlternate }}"
+                padding="40px"
+    >
+      <mj-column width="100px"
+                 vertical-align="middle">
+        <mj-image src="{{ data.global.prefix }}/profile-{{ data.salesforce.nmls }}-square.jpg"
+                  width="80px"
+                  border="5px solid {{ data.color.white }}"
+                  border-radius="50%"></mj-image>
+      </mj-column>
+      <mj-column width="20px"></mj-column>
+      <mj-column width="140px"
+                 vertical-align="middle"
+      >
+        <mj-text color="{{ data.color.white }}"
+                 line-height="24px"
+                 align="center"
+        >
+          <strong>{{ data.salesforce.name }}</strong>
+          <br>
+          {{ data.salesforce.title }}
+        </mj-text>
+      </mj-column>
+      <mj-column width="20px"></mj-column>
+      <mj-column width="140px"
+                 vertical-align="middle"
+      >
+        <mj-text color="{{ data.color.white }}"
+                 line-height="24px"
+                 align="center"
+        >
+          <strong>{{ data.salesforce.phone }}</strong>
+          <br>
+          NMLS #{{ data.salesforce.nmls }}
+        </mj-text>
+      </mj-column>
+
+    </mj-section>
+
+    <mj-section>
+      <mj-column>
+        <mj-spacer height="30px" />
+      </mj-column>
+    </mj-section>
+
+    <mj-section>
+      <mj-column width="405px">
+        <mj-text color="{{ data.color.white}}"
+                 align="center"
+                 font-size="10px"
+                 line-height="16px"
+        >
+          {{ data.global.disclaimer }}
+          {{ data.global.unsubscribeOne | safe }}{{ data.salesforce.recipientEmail }}{{ data.global.unsubscribeTwo | safe }}
+          <br>
+          <br>
+          {{ data.salesforce.mailing }}
+        </mj-text>
+      </mj-column>
+    </mj-section>
+
+    <mj-section>
+      <mj-column>
+        <mj-spacer height="10px" />
+      </mj-column>
+    </mj-section>
+
+    <mj-section>
+      <mj-column>
+        <mj-image width="122px" src="{{ data.global.prefix }}/process-{{ localColorString }}-logo.gif"></mj-image>
+      </mj-column>
+    </mj-section>
+
+    <mj-section>
+      <mj-column>
+        <mj-spacer height="60px" />
+      </mj-column>
+    </mj-section>
+
+  </mj-body>
+</mjml>

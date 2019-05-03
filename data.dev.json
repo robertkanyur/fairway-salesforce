@@ -1,10 +1,13 @@
 {
   "data": {
-    "color": {
-      "green": "#a1df92"
-    },
-    "global": {
-      "prefix": "/img"
+    "salesforce": {
+      "name": "RJ Keilen",
+      "phone": "480-703-3131",
+      "nmls": "249017",
+      "title": "Area Manager",
+      "recipientEmail": "9rx33xgd@gmail.com",
+      "recipientName": "Alex",
+      "mailing": "17851 N. 85th St. #250 – Scottsdale, AZ 85255"
     }
   }
 }

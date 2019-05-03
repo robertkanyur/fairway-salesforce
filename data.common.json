@@ -1,0 +1,18 @@
+{
+  "data": {
+    "color": {
+      "green": "#a1df92",
+      "greenDark1": "#90c882",
+      "gray": "#3a4041",
+      "black": "#000000",
+      "white": "#ffffff"
+    },
+    "global": {
+      "prefix": "/img",
+      "disclaimer": "We are vitally concerned with your privacy on the internet. You have received this message as a Fairway Independent Mortgage Corporation customer or subscriber. To opt-out of further email correspondence from Fairway, please ",
+      "unsubscribeOne": "<a class=\"unsubscribe-link\" href=\"http://unsubscribe.fairway321.com/?email=",
+      "unsubscribeTwo": "\">click this link to unsubscribe.</a>"
+    }
+  }
+}
+
