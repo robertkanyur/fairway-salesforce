@@ -14,7 +14,7 @@ const mailgun = require('mailgun-js')({apiKey: MAILGUN_API, domain: domain});
 let data = {
   from: 'Robert Kanyur <robert@fairway321.com>',
   to: '9rx33xgd@gmail.com',
-  subject: 'mailgun test v1',
+  subject: emailFilename + ' ' + Date.now(),
   html: emailContent
 }
 

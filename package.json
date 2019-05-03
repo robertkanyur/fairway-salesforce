@@ -25,7 +25,7 @@
     "deploy:push": "scp ./dist/*.html deploy@prod:/home/deploy/html/fairway321.com/salesforce/",
     "deploy:aws": "aws s3 cp dist/img s3://fairway-salesforce --recursive",
     "deploy": "npm run deploy:build && npm run deploy:push && npm run deploy:aws",
-    "test": "node mailgun.js"
+    "test": "npm run deploy && node mailgun.js"
   },
   "repository": {
     "type": "git",
