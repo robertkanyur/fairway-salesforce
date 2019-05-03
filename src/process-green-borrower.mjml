@@ -1,0 +1,6 @@
+{% extends '_process-green.mjml' %}
+
+{% block content %}
+  <mj-text>content</mj-text>
+{% endblock %}
+

@@ -1,0 +1,34 @@
+<mjml>
+  <mj-head>
+    <mj-attributes>
+      <mj-section padding="0" />
+    </mj-attributes>
+  </mj-head>
+  <mj-body background-color="{{ data.color.green }}">
+
+    <mj-section>
+      <mj-column>
+        <mj-spacer height="60px" />
+      </mj-column>
+    </mj-section>
+
+    <mj-section>
+      <mj-column>
+        <mj-image width="50px" src="{{ data.global.prefix }}/process-green-icon.png"></mj-image>
+      </mj-column>
+    </mj-section>
+
+    <mj-section>
+      <mj-column>
+        <mj-spacer height="30px" />
+      </mj-column>
+    </mj-section>
+
+    <mj-section background-color="#ffffff" border-radius="10px">
+      <mj-column>
+        {% block content %}{% endblock %}
+      </mj-column>
+    </mj-section>
+
+  </mj-body>
+</mjml>
