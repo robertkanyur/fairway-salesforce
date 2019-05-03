@@ -24,7 +24,8 @@
     "deploy:build": "rm -rf ./dist && mkdir dist && npm run build:html:prod && npm run build:img:prod && npm run version && npm run revision && rm -rf ./dist/_mjml",
     "deploy:push": "scp ./dist/*.html deploy@prod:/home/deploy/html/fairway321.com/salesforce/",
     "deploy:aws": "aws s3 cp dist/img s3://fairway-salesforce --recursive",
-    "deploy": "npm run deploy:build && npm run deploy:push && npm run deploy:aws"
+    "deploy": "npm run deploy:build && npm run deploy:push && npm run deploy:aws",
+    "test": "node mailgun.js"
   },
   "repository": {
     "type": "git",
@@ -40,10 +41,12 @@
   "devDependencies": {
     "@songkick/replaceinfiles": "^1.1.6",
     "concurrently": "^4.1.0",
+    "dotenv": "^8.0.0",
     "dotsunited-merge-json": "^3.0.0",
     "hashmark": "^5.0.0",
     "imagemin-cli": "^4.0.1",
     "live-server": "^1.2.1",
+    "mailgun-js": "^0.22.0",
     "mjml": "^4.4.0-beta.1",
     "node-version-assets": "github:techjacker/node-version-assets",
     "nunjucks-cli": "^0.5.1",
