@@ -4,13 +4,6 @@
 {% set localColorAlternate = data.color.greenDark1 %}
 
 {% block copy %}
-
-  Great news! Your loan has been approved. We will let you know 
-  shortly if we require anything else before you are cleared to
-  close.
-  <br><br>
-  Should you have any questions, please let us know. Thank you
-  again for the opportunity to serve you!
-
+  {{ data.copy.process.approved.borrower | safe }}
 {% endblock %}
 

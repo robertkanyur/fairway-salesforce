@@ -3,15 +3,31 @@
     "color": {
       "green": "#a1df92",
       "greenDark1": "#90c882",
+      "blue": "#81d0e5",
+      "blueDark1": "#74bacc",
+      "teal": "#93dfcf",
+      "tealDark1": "#83c8b9",
       "gray": "#3a4041",
       "black": "#000000",
       "white": "#ffffff"
     },
     "global": {
-      "prefix": "/img",
       "disclaimer": "We are vitally concerned with your privacy on the internet. You have received this message as a Fairway Independent Mortgage Corporation customer or subscriber. To opt-out of further email correspondence from Fairway, please ",
       "unsubscribeOne": "<a class=\"unsubscribe-link\" href=\"http://unsubscribe.fairway321.com/?email=",
       "unsubscribeTwo": "\">click this link to unsubscribe.</a>"
+    },
+    "copy": {
+      "process": {
+        "approved": {
+          "borrower": "Great news! Your loan has been approved. We will let you know shortly if we require anything else before you are cleared to close.<br><br>Should you have any questions, please let us know. Thank you again for the opportunity to serve you!"
+        },
+        "application": {
+          "borrower": "I wanted to let you know that your application has been received. If you have any questions, you can always contact me via email, call, or text."
+        },
+        "clear": {
+          "borrower": "Great news! Your file has been cleared to close. The title company will be contacting you to schedule the signing of your closing documents."
+        }
+      }
     }
   }
 }
