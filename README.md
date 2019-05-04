@@ -1,3 +1,6 @@
 # fairway-salesforce
 
-email templates for salesforce
+An automated build tool for salesforce email campaigns.
+
+![](demo/demo-fairway-salesforce.gif)
+
