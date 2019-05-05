@@ -40,7 +40,9 @@ e       <mj-image width="50px" src="{{ data.global.prefix }}/process-{{ localCol
       </mj-column>
     </mj-section>
 
-    <mj-section>
+    <mj-section padding-left="40px"
+                padding-right="40px"
+    >
       <mj-column width="450px"
                  background-color="{{ data.color.white }}"
                  border-radius="10px"
@@ -65,15 +67,16 @@ e       <mj-image width="50px" src="{{ data.global.prefix }}/process-{{ localCol
                 padding="40px"
     >
       <mj-column width="100px"
-                 vertical-align="middle">
+                 vertical-align="middle"
+      >
         <mj-image src="{{ data.global.prefix }}/profile-{{ data.salesforce.nmls }}-square.jpg"
                   width="80px"
                   border="5px solid {{ data.color.white }}"
                   border-radius="50%"></mj-image>
       </mj-column>
-      <mj-column width="20px"></mj-column>
       <mj-column width="140px"
                  vertical-align="middle"
+                 padding-left="10px"
       >
         <mj-text color="{{ data.color.white }}"
                  line-height="24px"
@@ -84,7 +87,6 @@ e       <mj-image width="50px" src="{{ data.global.prefix }}/process-{{ localCol
           {{ data.salesforce.title }}
         </mj-text>
       </mj-column>
-      <mj-column width="20px"></mj-column>
       <mj-column width="140px"
                  vertical-align="middle"
       >
@@ -107,11 +109,13 @@ e       <mj-image width="50px" src="{{ data.global.prefix }}/process-{{ localCol
     </mj-section>
 
     <mj-section>
-      <mj-column width="465px">
+      <mj-column width="545px">
         <mj-text color="{{ data.color.white}}"
                  align="center"
                  font-size="11px"
                  line-height="15px"
+                 padding-left="40px"
+                 padding-right="40px"
         >
           {{ data.global.disclaimer }}
           {{ data.global.unsubscribeOne | safe }}{{ data.salesforce.recipientEmail }}{{ data.global.unsubscribeTwo | safe }}
