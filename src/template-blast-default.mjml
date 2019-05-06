@@ -1,4 +1,4 @@
-{% extends 'blast.mjml' %}
+{% extends '_blast.mjml' %}
 
 {% block content %}
 {{ data.copy.template.content | safe }}
