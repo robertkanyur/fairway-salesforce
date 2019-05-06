@@ -25,9 +25,7 @@
     },
     "copy": {
       "template": {
-        "headline": "SAMPLE HEADLINE",
-        "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer volutpat, purus aliquet posuere finibus, erat ante volutpat odio, vitae rhoncus nunc felis vitae nibh.<br><br>Aliquam erat volutpat. Nullam ullamcorper tortor eget lectus porttitor laoreet. Curabitur aliquam, lacus hendrerit congue lobortis, dolor dui accumsan neque, ut ullamcorper justo neque in sapien.<br><br>Donec quam mauris, blandit eu interdum lobortis, interdum sed lorem. Curabitur hendrerit nulla in semper pulvinar.",
-        "button": "CALL 480-703-3131 TODAY"
+        "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer volutpat, purus aliquet posuere finibus, erat ante volutpat odio, vitae rhoncus nunc felis vitae nibh.<br><br>Aliquam erat volutpat. Nullam ullamcorper tortor eget lectus porttitor laoreet. Curabitur aliquam, lacus hendrerit congue lobortis, dolor dui accumsan neque, ut ullamcorper justo neque in sapien.<br><br>Donec quam mauris, blandit eu interdum lobortis, interdum sed lorem. Curabitur hendrerit nulla in semper pulvinar."
       }
     }
   }
