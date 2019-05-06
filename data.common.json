@@ -7,6 +7,13 @@
       "blueDark1": "#74bacc",
       "teal": "#93dfcf",
       "tealDark1": "#83c8b9",
+      "slateLight1": "#95a2a5",
+      "slate": "#2f4244",
+      "slateDark1": "#2a3b3d",
+      "grayLight2": "#f8f9f9",
+      "grayLight1": "#ededed",
+      "grayLight0": "#b2b2b2",
+      "grayLight00": "#e0e0e0",
       "gray": "#3a4041",
       "black": "#000000",
       "white": "#ffffff"
@@ -17,16 +24,10 @@
       "unsubscribeTwo": "\">click this link to unsubscribe.</a>"
     },
     "copy": {
-      "process": {
-        "approved": {
-          "borrower": "Great news! Your loan has been approved. We will let you know shortly if we require anything else before you are cleared to close.<br><br>Should you have any questions, please let us know. Thank you again for the opportunity to serve you!"
-        },
-        "application": {
-          "borrower": "I wanted to let you know that your application has been received. If you have any questions, you can always contact me via email, call, or text."
-        },
-        "clear": {
-          "borrower": "Great news! Your file has been cleared to close. The title company will be contacting you to schedule the signing of your closing documents."
-        }
+      "template": {
+        "headline": "SAMPLE HEADLINE",
+        "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer volutpat, purus aliquet posuere finibus, erat ante volutpat odio, vitae rhoncus nunc felis vitae nibh.<br><br>Aliquam erat volutpat. Nullam ullamcorper tortor eget lectus porttitor laoreet. Curabitur aliquam, lacus hendrerit congue lobortis, dolor dui accumsan neque, ut ullamcorper justo neque in sapien.<br><br>Donec quam mauris, blandit eu interdum lobortis, interdum sed lorem. Curabitur hendrerit nulla in semper pulvinar.",
+        "button": "CALL 480-703-3131 TODAY"
       }
     }
   }

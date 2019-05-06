@@ -1,13 +1,13 @@
 {
   "data": {
     "global": {
-      "prefix": "https://d3g7yydxj8payf.cloudfront.net"
+      "prefix": "/img"
     },
     "salesforce": {
-      "name": "Tamara Louise Jakubos",
+      "name": "Tamara L. Jakubos",
       "phone": "(480) 703-3131",
       "nmls": "249017",
-      "title": "Sales Manager / Sr. Loan Officer",
+      "title": "Senior Loan Officer",
       "recipientEmail": "tamara.jakubos@fairwaymc.com",
       "recipientName": "John Jacob Jingleheimer",
       "mailing": "17851 N. Raintree Drive #250 – Scottsdale, AZ 85255"

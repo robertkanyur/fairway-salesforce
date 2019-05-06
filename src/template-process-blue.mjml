@@ -1,0 +1,5 @@
+{% extends '_process.mjml' %}
+{% set localColorPrimary = data.color.blue %}
+{% set localColorAlternate = data.color.blueDark1 %}
+
+

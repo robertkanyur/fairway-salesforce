@@ -2,6 +2,7 @@
   <mj-head>
     <mj-title>Email Preview</mj-title>
     <mj-attributes>
+      <mj-body width="550px" />
       <mj-section padding="0" />
       <mj-column padding="0" />
       <mj-image padding="0" />
@@ -16,7 +17,7 @@
     </mj-attributes>
     <mj-style inline="inline">
       .unsubscribe-link{
-        color: #ffffff;
+        color: {{data.color.white}};
       }
     </mj-style>
   </mj-head>
@@ -30,15 +31,14 @@
 
     <mj-section>
       <mj-column>
-e       <mj-image width="50px" src="{{ data.global.prefix }}/process-{{ localColorString }}-icon.gif"></mj-image>
+e       <mj-image width="50px" src="{{ data.global.prefix }}/process-icon.png"></mj-image>
       </mj-column>
     </mj-section>
 
     <mj-section>
       <mj-column>
         <mj-spacer height="30px" />
-      </mj-column>
-    </mj-section>
+      </mj-column> </mj-section>
 
     <mj-section padding-left="40px"
                 padding-right="40px"
@@ -51,7 +51,9 @@ e       <mj-image width="50px" src="{{ data.global.prefix }}/process-{{ localCol
       <mj-text>
         {{ data.salesforce.recipientName }},
         <br><br>
-        {% block copy %}{% endblock %}
+        {% block copy %}
+          {{ data.copy.template.content | safe }}
+        {% endblock %}
       </mj-text>
       </mj-column>
     </mj-section>
@@ -66,17 +68,17 @@ e       <mj-image width="50px" src="{{ data.global.prefix }}/process-{{ localCol
                 background-color="{{ localColorAlternate }}"
                 padding="40px"
     >
-      <mj-column width="100px"
-                 vertical-align="middle"
+      <mj-column vertical-align="middle"
+                 width="130px"
       >
-        <mj-image src="{{ data.global.prefix }}/profile-{{ data.salesforce.nmls }}-square.jpg"
-                  width="80px"
+        <mj-image src="{{ data.global.prefix }}/profile-{{ data.salesforce.nmls }}-round.png"
                   border="5px solid {{ data.color.white }}"
+                  align="center"
+                  width="80px"
                   border-radius="50%"></mj-image>
       </mj-column>
-      <mj-column width="140px"
-                 vertical-align="middle"
-                 padding-left="10px"
+      <mj-column vertical-align="middle"
+                 width="160px"
       >
         <mj-text color="{{ data.color.white }}"
                  line-height="24px"
@@ -87,8 +89,8 @@ e       <mj-image width="50px" src="{{ data.global.prefix }}/process-{{ localCol
           {{ data.salesforce.title }}
         </mj-text>
       </mj-column>
-      <mj-column width="140px"
-                 vertical-align="middle"
+      <mj-column vertical-align="middle"
+                 width="160px"
       >
         <mj-text color="{{ data.color.white }}"
                  line-height="24px"
@@ -134,7 +136,7 @@ e       <mj-image width="50px" src="{{ data.global.prefix }}/process-{{ localCol
 
     <mj-section>
       <mj-column>
-        <mj-image width="122px" src="{{ data.global.prefix }}/process-{{ localColorString }}-logo.gif"></mj-image>
+        <mj-image width="122px" src="{{ data.global.prefix }}/process-logo.png"></mj-image>
       </mj-column>
     </mj-section>
 

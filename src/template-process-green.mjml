@@ -1,9 +1,4 @@
 {% extends '_process.mjml' %}
-{% set localColorString = "green" %}
 {% set localColorPrimary = data.color.green %}
 {% set localColorAlternate = data.color.greenDark1 %}
-
-{% block copy %}
-  {{ data.copy.process.approved.borrower | safe }}
-{% endblock %}
 

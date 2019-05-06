@@ -1,0 +1,167 @@
+<mjml>
+  <mj-head>
+    <mj-title>Email Preview</mj-title>
+    <mj-attributes>
+      <mj-body width="600px" />
+      <mj-section padding="0" />
+      <mj-column padding="0" />
+      <mj-image padding="0" />
+
+      <mj-text color="{{ data.color.gray }}"
+               font-family="'Trebuchet MS', 'Arial', sans-serif"
+               font-size="17px"
+               line-height="22px"
+               padding-left="0"
+               padding-right="0"
+      />
+    </mj-attributes>
+    <mj-style inline="inline">
+      .unsubscribe-link{
+        color: {{ data.color.slateLight1 }};
+      }
+    </mj-style>
+  </mj-head>
+  <mj-body background-color="{{ data.color.white }}">
+    <mj-section>
+      <mj-column>
+        <mj-spacer height="110px"></mj-spacer>
+      </mj-column>
+    </mj-section>
+
+    <mj-section>
+      <mj-column padding="0 40px"
+      >
+        <mj-text align="center"
+                font-size="48px"
+                line-height="60px"
+        >
+          <strong>Your app is ready.</strong>
+        </mj-text>
+      </mj-column>
+    </mj-section>
+
+    <mj-section>
+      <mj-column width="480px"
+                 padding="0 40px"
+      >
+        <mj-text align="center"
+        >
+          I would like to introduce you to your personal app.
+          It allows me to communicate with you and the borrower
+          throughout the loan process.
+        </mj-text>
+      </mj-column>
+    </mj-section>
+    <mj-section>
+      <mj-column padding="0 40px">
+        <mj-text align="center">
+          This co-branded app allows you and your client to:
+          <br><br>
+          <strong><em>Instantly calculate mortgage payments</em></strong>
+          <br><br>
+          <strong><em>Receive in-process notifications on transactions</em></strong>
+          <br><br> <strong><em>Receive in-process notifications on transactions</em></strong> <br><br>
+          Click the link below to get started!
+        </mj-text>
+        <mj-raw>
+          <tr>
+            <td align="center" vertical-align="middle" style="font-size: 0px; padding: 10px 25px; padding-top: 15px; padding-bottom: 0; word-break: break-word;">
+              <table border="0" cellpadding="0" cellspacing="0" role="presentation" style="border-collapse:separate;line-height:100%;">
+                <tr>
+                  <td align="center" bgcolor="#a1df92" role="presentation" style="border:none;border-radius:35px;cursor:auto;mso-padding-alt:10px 25px 7px;valign="middle">
+                    <a href="https://mobile.fairwaynow.com/borrower/signup/rj@fairwaymc.com" style="display:inline-block;background:#a1df92;background:linear-gradient(36deg, #84D0E3 0%, #A3DE95 100%);color:#ffffff;font-family:Trebuchet MS, arial, sans-serif;font-size:20px;font-weight:normal;line-height:30px;Margin:0;text-decoration:none;text-transform:none;padding:10px 25px 7px;mso-padding-alt:0px;border-radius:35px;" target="_blank">
+                      <strong><em>INSTALL YOUR APP</em></strong>
+                    </a>
+                  </td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+        </mj-raw>
+      </mj-column>
+      </mj-section>
+    </mj-section>
+    <mj-section>
+      <mj-column>
+        <mj-image src="{{data.global.prefix}}/clean-divider.gif"
+                  width="600px"
+                  padding="0"
+        />
+      </mj-column>
+    </mj-section>
+
+    <mj-wrapper background-color="{{ data.color.white }}"
+                padding-top="0"
+    >
+      <mj-section background-color="{{ data.color.white }}"
+                  padding="40px 0 0"
+      >
+        <mj-column vertical-align="middle"
+                  width="120px"
+        >
+          <mj-image src="{{ data.global.prefix }}/profile-{{ data.salesforce.nmls }}-round.png"
+                    align="center"
+                    width="80px"
+                    border-radius="50%"></mj-image>
+        </mj-column>
+        <mj-column vertical-align="middle"
+                  width="160px"
+        >
+
+          <mj-text line-height="24px"
+                  align="center"
+          >
+            <strong>{{ data.salesforce.name }}</strong>
+            <br>
+            {{ data.salesforce.title }}
+          </mj-text>
+        </mj-column>
+        <mj-column vertical-align="middle"
+                   width="160px"
+        >
+          <mj-text line-height="24px"
+                  align="center"
+          >
+            <strong>{{ data.salesforce.phone }}</strong>
+            <br>
+            NMLS #{{ data.salesforce.nmls }}
+          </mj-text>
+        </mj-column>
+
+      </mj-section>
+      <mj-section>
+        <mj-column width="580px">
+          <mj-divider border-width="1px"
+                      border-color="{{ data.color.grayLight00 }}"
+                      padding="20px 40px"
+          />
+          </mj-divider>
+        </mj-column>
+      </mj-section>
+      <mj-section>
+        <mj-column width="525px"
+                   padding="0 40px">
+          <mj-text color="{{ data.color.slateLight1 }}"
+                 align="center"
+                 font-size="11px"
+                 line-height="15px"
+                 padding="0 0 20px"
+          >
+            {{ data.global.disclaimer }}
+            {{ data.global.unsubscribeOne | safe }}{{ data.salesforce.recipientEmail }}{{ data.global.unsubscribeTwo | safe }}
+            <br>
+            <br>
+            {{ data.salesforce.mailing }}
+          </mj-text>
+        </mj-column>
+      </mj-section>
+
+      <mj-section padding-bottom="40px">
+        <mj-column>
+          <mj-image width="122px" src="{{ data.global.prefix }}/clean-logo.png"></mj-image>
+        </mj-column>
+      </mj-section>
+    </mj-wrapper>
+
+  </mj-body>
+</mjml>

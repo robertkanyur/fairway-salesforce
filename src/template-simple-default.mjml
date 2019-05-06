@@ -1,0 +1,138 @@
+<mjml>
+  <mj-head>
+    <mj-title>Email Preview</mj-title>
+    <mj-attributes>
+      <mj-body width="800px" />
+      <mj-section padding="0" />
+      <mj-column padding="0" />
+      <mj-image padding="0" />
+
+      <mj-text color="{{ data.color.gray }}" 
+               font-family="'Trebuchet MS', 'Arial', sans-serif"
+               font-size="17px"
+               line-height="22px"
+               padding-left="0"
+               padding-right="0"
+      />
+    </mj-attributes>
+    <mj-style inline="inline">
+      .unsubscribe-link{
+        color: {{ data.color.grayLight0 }};
+      }
+    </mj-style>
+  </mj-head>
+  <mj-body background-color="{{ data.color.grayLight1 }}">
+    <mj-hero mode="fixed-height"
+             height="283px"
+             background-width="800px"
+             background-height="283px"
+             background-url="{{ data.global.prefix }}/simple-hero.gif"
+             background-color="#2d6d77"
+    >
+      <mj-text font-size="40px"
+               color="{{ data.color.white }}"
+               padding-top="197px"
+               line-height="42px"
+               align="center"
+      >
+        <strong>{{ data.copy.template.headline }}</strong>
+      </mj-text>
+    </mj-hero>
+
+    <mj-section background-color="{{ data.color.white }}"
+                padding="0"
+    >
+      <mj-column width="600px"
+                 padding="30px 40px"
+      >
+        <mj-text>
+          Dear {{ data.salesforce.recipientName }},
+          <br><br>
+          {{ data.copy.template.content | safe }}
+        </mj-text>
+        <mj-button background-color="{{data.color.green}}"
+                  font-family="Trebuchet MS, arial, sans-serif"
+                  padding-top="15px"
+                  inner-padding="10px 25px 7px"
+                  font-size="16px"
+                  line-height="30px"
+                  border-radius="35px"
+        >
+          <strong>{{ data.copy.template.button }}</strong>
+        </mj-button>
+      </mj-column>
+    </mj-section>
+
+    <mj-wrapper background-color="{{ data.color.grayLight2 }}"
+    >
+      <mj-section background-color="{{ data.color.grayLight2 }}"
+                  padding="40px 0 0"
+      >
+        <mj-column vertical-align="middle"
+                  width="120px"
+        >
+          <mj-image src="{{ data.global.prefix }}/profile-{{ data.salesforce.nmls }}-round.png"
+                    align="center"
+                    width="80px"
+                    border-radius="50%"></mj-image>
+        </mj-column>
+        <mj-column vertical-align="middle"
+                  width="160px"
+        >
+
+          <mj-text line-height="24px"
+                  align="center"
+          >
+            <strong>{{ data.salesforce.name }}</strong>
+            <br>
+            {{ data.salesforce.title }}
+          </mj-text>
+        </mj-column>
+        <mj-column vertical-align="middle"
+                  width="160px"
+        >
+          <mj-text line-height="24px"
+                  align="center"
+          >
+            <strong>{{ data.salesforce.phone }}</strong>
+            <br>
+            NMLS #{{ data.salesforce.nmls }}
+          </mj-text>
+        </mj-column>
+
+      </mj-section>
+      <mj-section>
+        <mj-column width="580px">
+          <mj-divider border-width="1px"
+                      border-color="{{ data.color.grayLight00 }}"
+                      padding="20px 40px"
+          />
+        </mj-column>
+      </mj-section>
+      <mj-section>
+        <mj-column width="525px"
+                   padding="0 40px">
+          <mj-text color="{{ data.color.grayLight0 }}"
+                 align="center"
+                 font-size="11px"
+                 line-height="15px"
+                 padding="0 0 20px"
+          >
+            {{ data.global.disclaimer }}
+            {{ data.global.unsubscribeOne | safe }}{{ data.salesforce.recipientEmail }}{{ data.global.unsubscribeTwo | safe }}
+            <br>
+            <br>
+            {{ data.salesforce.mailing }}
+          </mj-text>
+        </mj-column>
+      </mj-section>
+
+      <mj-section padding-bottom="40px">
+        <mj-column>
+          <mj-image width="122px" src="{{ data.global.prefix }}/simple-logo.png"></mj-image>
+        </mj-column>
+      </mj-section>
+    </mj-wrapper>
+
+  </mj-body>
+</mjml>
