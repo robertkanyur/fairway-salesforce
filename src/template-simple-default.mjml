@@ -4,6 +4,10 @@
 DEFAULT HEADLINE
 {% endblock %}
 
+{% block content %}
+{{ data.copy.template.content | safe }}
+{% endblock %}
+
 {% block buttonText %}
 DEFAULT BUTTON TEXT
 {% endblock %}

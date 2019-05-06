@@ -2,6 +2,16 @@
   "data": {
     "global": {
       "prefix": "https://d3g7yydxj8payf.cloudfront.net"
+    },
+    "salesforce": {
+      "name": "RJ Keilen",
+      "phone": "480-703-3131",
+      "nmls": "249017",
+      "title": "Area Manager",
+      "recipientEmail": "9rx33xgd@gmail.com",
+      "recipientName": "Alex",
+      "mailing": "17851 N. 85th St. #250 – Scottsdale, AZ 85255",
+      "app": "https://mobile.fairwaynow.com/borrower/signup/rj@fairwaymc.com"
     }
   }
 }

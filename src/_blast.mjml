@@ -22,22 +22,9 @@
     </mj-style>
   </mj-head>
   <mj-body background-color="{{ data.color.grayLight1 }}">
-    <mj-hero mode="fixed-height"
-             height="283px"
-             background-width="800px"
-             background-height="283px"
-             background-url="{{ data.global.prefix }}/simple-hero.gif"
-             background-color="#2d6d77"
-    >
-      <mj-text font-size="40px"
-               color="{{ data.color.white }}"
-               padding-top="197px"
-               line-height="42px"
-               align="center"
-      >
-        <strong>{% block headline %}{% endblock %}</strong>
-      </mj-text>
-    </mj-hero>
+    <mj-image src="{{data.global.prefix}}/blast-hero.gif" 
+              width="800px"
+    />
 
     <mj-section background-color="{{ data.color.white }}"
                 padding="0"
@@ -48,7 +35,7 @@
         <mj-text>
           Dear {{ data.salesforce.recipientName }},
           <br><br>
-          {% block content %}{% endblock %}
+          {{ data.copy.template.content | safe }}
         </mj-text>
         <mj-button background-color="{{data.color.green}}"
                   font-family="Trebuchet MS, arial, sans-serif"
