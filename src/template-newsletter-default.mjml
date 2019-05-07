@@ -1,0 +1,79 @@
+{% extends '_newsletter.mjml' %}
+
+{% set localDateString = '2019may' %}
+
+{% block headline %}
+Hello, {{ data.salesforce.recipientName }}
+{% endblock %}
+
+{% block intro %}
+Thanks for following our monthly newsletter.
+Below you will find industry news, helpful resources,
+and interesting local stories.
+{% endblock %}
+
+{% block headlineOne %}
+Two Trends Keeping Housing Affordable
+{% endblock %}
+
+{% block subtitleOne %}
+ACT NOW WHILE RATES ARE STILL LOW!
+{% endblock %}
+
+{% block articleOne %}
+Two positive trends have started to emerge that impact the
+Spring 2019 housing market. Mortgage interest rates for a
+30-year fixed rate loan have dropped to new lows, right as
+reports show that wages have increased at their highest rate
+in decades!
+<br><br>
+These two factors have helped keep housing affordable despite
+low supply of houses for sale driving up prices. <em>First 
+American's Chief Economist,</em> Mark Fleming, explains the
+impact:
+<br><br>
+  {{ data.element.blockquote.start | safe}}
+    <em>&ldquo;Ongoing supply shortages remain the main driver of
+    the performance gap as the housing market continues to face
+    and inventory impasse &ndash; you can't buy what's not for sale.
+    </em>
+    <br><br>
+    <em>&ldquo;However, an unexpected affordability surge driven primarily by
+    lower-than-anticipated mortgage rates, rising wages, and
+    favorable demographics, has boosted housing demand.</em>
+    <br><br>
+    <em>&ldquo;We expect rising wages and lower mortgage rates to continue
+    throughout the spring, boosting housing demand and spurring home
+    sales.&rdquo;</em>
+  {{ data.element.blockquote.end | safe}}
+{% endblock %}
+
+{% block headlineTwo %}
+Renters Paying Substantially More, While Owning Costs Less
+{% endblock %}
+
+{% block subtitleTwo %}
+AFFORDABILITY SURGE ARRIVES JUST IN TIME
+{% endblock %}
+
+{% block articleTwo %}
+In a recent <em>Insights Blog, CoreLogic</em> reported that rent
+prices have skyrocketed since 2005. Meanwhile, the typical mortgage
+payment has actually decreased.
+<br><br>
+{{ data.element.blockquote.start | safe }}
+<em>&ldquo;CoreLogic's national rent index was up 36% in December
+2018 compared with December 2005, while the typical mortgage
+payment was down 4% over that period.&rdquo;</em>
+{{ data.element.blockquote.end | safe }}
+<br>
+It makes sense that rents have risen. However, how did mortgage
+payments decrease? <em>CoreLogic</em> explains:
+<br><br>
+{{ data.element.blockquote.start | safe }}
+<em>&ldquo;It's mainly because mortgage rates back in December 2005
+were significantly higher, averaging 6.3% for a fixed-rate, 30-year
+loan, compared with 4.6% in 2018.</em>
+{{ data.element.blockquote.end | safe }}
+{% endblock %}
+

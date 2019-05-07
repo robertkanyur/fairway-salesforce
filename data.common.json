@@ -7,9 +7,10 @@
       "blueDark1": "#74bacc",
       "teal": "#93dfcf",
       "tealDark1": "#83c8b9",
-      "slateLight1": "#95a2a5",
+      "slateLight2": "#95a2a5",
       "slateLight1": "#425456",
       "slate": "#2f4244",
+      "slateDark0": "#234e5a",
       "slateDark1": "#2a3b3d",
       "grayLight2": "#f8f9f9",
       "grayLight1": "#ededed",
@@ -19,6 +20,12 @@
       "beige": "#f8f9f9",
       "black": "#000000",
       "white": "#ffffff"
+    },
+    "element": {
+      "blockquote": {
+        "start": "<mj-raw><span style=\"display:block;margin:10px 15px;padding:0 20px;border-left: 7px solid #ededed\">",
+        "end": "</span></mj-raw>"
+      }
     },
     "global": {
       "disclaimer": "We are vitally concerned with your privacy on the internet. You have received this message as a Fairway Independent Mortgage Corporation customer or subscriber. To opt-out of further email correspondence from Fairway, please ",
