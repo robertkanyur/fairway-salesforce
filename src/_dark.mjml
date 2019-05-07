@@ -1,0 +1,123 @@
+<mjml>
+  <mj-head>
+    <mj-title>Email Preview</mj-title>
+    <mj-attributes>
+      <mj-body width="600px" />
+      <mj-wrapper padding="0" />
+      <mj-section padding="0"
+      />
+      <mj-column padding="0" />
+      <mj-image padding="0" />
+
+      <mj-text color="{{ data.color.gray }}" 
+               font-family="'Trebuchet MS', 'Arial', sans-serif"
+               font-size="17px"
+               line-height="22px"
+               padding-left="0"
+               padding-right="0"
+      />
+    </mj-attributes>
+    <mj-style inline="inline">
+      .unsubscribe-link{
+        color: {{ data.color.white }};
+      }
+    </mj-style>
+  </mj-head>
+  <mj-body background-color="{{ data.color.beige }}">
+
+    <mj-wrapper background-color="{{data.color.slate}}"
+                background-url="{{data.global.prefix}}/dark-bg.gif"
+                background-repeat="no-repeat"
+    >
+      <mj-section padding="40px 0 25px">
+        <mj-column>
+          <mj-image src="{{data.global.prefix}}/dark-logo.png"
+                    width="164px"
+          />
+        </mj-column>
+      </mj-section>
+      <mj-section padding="0 20px">
+        <mj-column width="450px"
+                   padding="40px 20px"
+                   background-color="{{data.color.white}}"
+        >
+          <mj-text>
+            Dear {{ data.salesforce.recipientName }},
+            <br><br>
+            {% block content %}{% endblock %}
+          </mj-text>
+          <mj-button background-color="{{data.color.green}}"
+                    font-family="Trebuchet MS, arial, sans-serif"
+                    padding-top="20px"
+                    padding-bottom="0"
+                    inner-padding="6px 35px 3px"
+                    font-size="16px"
+                    line-height="30px"
+                    border-radius="35px"
+                    href="{{localButtonLink}}"
+          >
+            <strong>{% block buttonText %}{% endblock %}</strong>
+          </mj-button>
+        </mj-column>
+      </mj-section>
+    </mj-wrapper>
+
+    <mj-section background-color="{{ data.color.slateLight1 }}"
+                padding="25px 0"
+    >
+      <mj-column vertical-align="middle"
+                width="120px"
+      >
+        <mj-image src="{{ data.global.prefix }}/profile-{{ data.salesforce.nmls }}-rect.jpg"
+                  align="center"
+                  width="100px"
+        ></mj-image>
+      </mj-column>
+      <mj-column vertical-align="middle"
+                 width="160px"
+      >
+
+        <mj-text line-height="24px"
+                 align="center"
+                 color="{{data.color.white}}"
+        >
+          <strong>{{ data.salesforce.name }}</strong>
+          <br>
+          {{ data.salesforce.title }}
+          <br>
+          NMLS #{{ data.salesforce.nmls }}
+        </mj-text>
+      </mj-column>
+      <mj-column vertical-align="middle"
+                width="200px"
+      >
+        <mj-text line-height="24px"
+                 align="center"
+                 color="{{data.color.white}}"
+        >
+          <strong>{{ data.salesforce.phone }}</strong>
+          <br>
+          {{data.salesforce.mailing1}}
+          <br>
+          {{data.salesforce.mailing2}}
+        </mj-text>
+      </mj-column>
+
+    </mj-section>
+    <mj-section background-color="{{data.color.slate}}">
+      <mj-column width="525px"
+                  padding="25px 40px 20px">
+        <mj-text color="{{ data.color.white }}"
+                align="center"
+                font-size="11px"
+                line-height="15px"
+                padding="0 0 20px"
+        >
+          {{ data.global.disclaimer }}
+          {{ data.global.unsubscribeOne | safe }}{{ data.salesforce.recipientEmail }}{{ data.global.unsubscribeTwo | safe }}
+        </mj-text>
+      </mj-column>
+    </mj-section>
+
+  </mj-body>
+</mjml>

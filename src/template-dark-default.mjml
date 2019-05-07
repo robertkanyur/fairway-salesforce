@@ -1,0 +1,13 @@
+{% extends '_dark.mjml' %}
+
+{% block content %}
+{{ data.copy.template.content | safe }}
+{% endblock %}
+
+{% block buttonText %}
+DEFAULT BUTTON TEXT
+{% endblock %}
+
+{% set localButtonLink = 'http://google.com' %}
+
+
