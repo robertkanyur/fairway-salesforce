@@ -1,0 +1,14 @@
+{% extends '_process.mjml' %}
+{% set localColorPrimary = data.color.green %}
+{% set localColorAlternate = data.color.greenDark1 %}
+{% set localRecipientEmail = '' %}
+
+{% block copy %}
+We are clear to close on {{data.salesforce.borrowerName}}'s 
+loan for <em>{{data.salesforce.propertyAddress}}</em>!
+<br><br>
+Call your borrower to congratulate them now! Jungo sent them 
+and email on your behalf, but CTC is too important to not make 
+a phone call as well. Here's their number: 
+<strong>{{data.salesforce.borrowerPhone}}</strong>
+{% endblock %}

@@ -1,0 +1,10 @@
+{% extends '_process.mjml' %}
+{% set localColorPrimary = data.color.blue %}
+{% set localColorAlternate = data.color.blueDark1 %}
+{% set localRecipientEmail = '' %}
+
+{% block copy %}
+{{data.salesforce.borrowerName}}'s loan file was just sent to
+processing in Encompass. The borrower and both agents have
+been notified via email.
+{% endblock %}

@@ -1,0 +1,13 @@
+{% extends '_process.mjml' %}
+{% set localColorPrimary = data.color.teal %}
+{% set localColorAlternate = data.color.tealDark1 %}
+{% set localRecipientEmail = data.salesforce.sellersEmail %}
+
+{% block copy %}
+{{data.salesforce.sellersFirstName}},
+<br><br>
+Congratulations on a successful closing! It has been a pleasure 
+working with you on the loan for <em>{{data.salesforce.propertyAddress}}.</em> 
+<br><br>
+We should meet for a celebratory cup of coffee soon! Call me if you have a chance.
+{% endblock %}

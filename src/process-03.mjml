@@ -1,0 +1,16 @@
+{% extends '_process.mjml' %}
+{% set localColorPrimary = data.color.blue %}
+{% set localColorAlternate = data.color.blueDark1 %}
+{% set localRecipientEmail = data.salesforce.buyersEmail %}
+
+{% block copy %}
+{{data.salesforce.buyersFirstName}},
+<br><br>
+I hope you are having a great day! I wanted to let you know
+that the loan application for {{data.salesforce.borrowerName}}
+has been sent to processing.
+<br><br>
+Once my processor puts everything together, the loan file
+will be sent to the underwriter for approval. Please contact
+me with questions at any time during this process.
+{% endblock %}

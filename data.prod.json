@@ -4,16 +4,24 @@
       "prefix": "https://d3g7yydxj8payf.cloudfront.net"
     },
     "salesforce": {
-      "name": "RJ Keilen",
-      "phone": "480-703-3131",
-      "nmls": "249017",
-      "title": "Area Manager",
-      "recipientEmail": "9rx33xgd@gmail.com",
-      "recipientName": "Alex",
-      "mailing": "17851 N. 85th St. #250 – Scottsdale, AZ 85255",
-      "mailing1": "17851 N. 85th St. #250",
-      "mailing2": "Scottsdale, AZ 85255",
-      "app": "https://mobile.fairwaynow.com/borrower/signup/rj@fairwaymc.com"
+      "name": "{!User.Name}",
+      "phone": "{!User.Phone}",
+      "nmls": "{!User.MtgPlanner_CRM__NMLS_New__c}",
+      "title": "{!User.Title}",
+      "email": "{!User.Email}",
+      "mailing": "{!User.Address}",
+      "mailing1": "{!User.Address_Line_1__c}",
+      "mailing2": "{!User.Address_Line_2__c}",
+      "app": "{!User.FairwayNOW__c}",
+      "borrowerName": "{!MtgPlanner_CRM__Transaction_Property__c.MtgPlanner_CRM__Borrower_Name__c}",
+      "borrowerFirstName": "{!MtgPlanner_CRM__Transaction_Property__c.MtgPlanner_CRM__Borrower_First_Name__c}",
+      "borrowerEmail": "{!MtgPlanner_CRM__Transaction_Property__c.Borrower_Email__c}",
+      "borrowerPhone": "{!MtgPlanner_CRM__Transaction_Property__c.Borrower_Phone__c}",
+      "propertyAddress": "{!MtgPlanner_CRM__Transaction_Property__c.MtgPlanner_CRM__Property_Address__c}",
+      "sellersEmail": "{!MtgPlanner_CRM__Transaction_Property__c.Jungo_LOS__Realtor_Listing_Agent_Email__c}",
+      "sellersFirstName": "{!MtgPlanner_CRM__Transaction_Property__c.MtgPlanner_CRM__Realtor_Listing_Agent_First_Name__c}",
+      "buyersEmail": "{!MtgPlanner_CRM__Transaction_Property__c.Jungo_LOS__Realtor_Buying_Agent_Email__c}",
+      "buyersFirstName": "{!MtgPlanner_CRM__Transaction_Property__c.MtgPlanner_CRM__Realtor_Buying_Agent_First_Name__c}"
     }
   }
 }

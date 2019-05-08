@@ -1,0 +1,15 @@
+{% extends '_holiday-memorial.mjml' %}
+
+{% block headline %}
+Celebrating freedom.
+{% endblock %}
+
+{% block copy %}
+Today we pause in gratitude for our nation,
+and to remember those who paid the ultimate
+price to serve and protect our freedom.
+{% endblock %}
+
+
+
+

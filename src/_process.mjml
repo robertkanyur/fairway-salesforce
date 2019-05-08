@@ -49,8 +49,6 @@ e       <mj-image width="50px" src="{{ data.global.prefix }}/process-icon.png"><
                  padding="40px 30px"
       >
       <mj-text>
-        {{ data.salesforce.recipientName }},
-        <br><br>
         {% block copy %}
           {{ data.copy.template.content | safe }}
         {% endblock %}
@@ -120,7 +118,7 @@ e       <mj-image width="50px" src="{{ data.global.prefix }}/process-icon.png"><
                  padding-right="40px"
         >
           {{ data.global.disclaimer }}
-          {{ data.global.unsubscribeOne | safe }}{{ data.salesforce.recipientEmail }}{{ data.global.unsubscribeTwo | safe }}
+          {{ data.global.unsubscribeOne | safe }}{{ localRecipientEmail }}{{ data.global.unsubscribeTwo | safe }}
           <br>
           <br>
           {{ data.salesforce.mailing }}

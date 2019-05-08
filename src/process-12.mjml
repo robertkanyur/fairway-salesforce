@@ -1,0 +1,9 @@
+{% extends '_process.mjml' %}
+{% set localColorPrimary = data.color.teal %}
+{% set localColorAlternate = data.color.tealDark1 %}
+{% set localRecipientEmail = '' %}
+
+{% block copy %}
+Post-closing congratulation emails have been sent to the borrower 
+and both agents for <em>{{data.salesforce.propertyAddress}}</em>.
+{% endblock %}

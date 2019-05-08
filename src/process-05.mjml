@@ -1,0 +1,12 @@
+{% extends '_process.mjml' %}
+{% set localColorPrimary = data.color.green %}
+{% set localColorAlternate = data.color.greenDark1 %}
+{% set localRecipientEmail = data.salesforce.borrowerEmail %}
+
+{% block copy %}
+{{data.salesforce.borrowerFirstName}},
+<br><br>
+I am excited to let you know that your loan for 
+<em>{{data.salesforce.propertyAddress}}</em> 
+is fully approved and clear to close! Congratulations!
+{% endblock %}

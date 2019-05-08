@@ -1,0 +1,33 @@
+<mjml>
+  <mj-head>
+    <mj-title>Email Preview</mj-title>
+    <mj-attributes>
+      <mj-body width="600px" />
+      <mj-section padding="0" />
+      <mj-column padding="0" />
+      <mj-image padding="0" />
+
+      <mj-text color="{{ data.color.gray }}" 
+               font-family="'Trebuchet MS', 'Arial', sans-serif"
+               font-size="17px"
+               line-height="22px"
+               padding-left="0"
+               padding-right="0"
+      />
+    </mj-attributes>
+    <mj-style inline="inline">
+      .unsubscribe-link{
+        color: {{ data.color.grayLight0 }};
+      }
+    </mj-style>
+  </mj-head>
+  <mj-body background-color="{{ data.color.grayLight1 }}">
+    <mj-section>
+      <mj-column>
+        <mj-text align="center">
+          Content goes here
+        </mj-text>
+      </mj-column>
+    </mj-section>
+  </mj-body>
+</mjml>

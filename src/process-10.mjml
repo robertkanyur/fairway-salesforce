@@ -1,0 +1,16 @@
+{% extends '_process.mjml' %}
+{% set localColorPrimary = data.color.teal %}
+{% set localColorAlternate = data.color.tealDark1 %}
+{% set localRecipientEmail = data.salesforce.buyersEmail %}
+
+{% block copy %}
+{{data.salesforce.buyersFirstName}},
+<br><br>
+Congratulations on a successful closing! It has been a 
+pleasure working with you on {{data.salesforce.borrowerName}}'s 
+file.
+<br><br>
+If you have any other borrowers who would appreciate Fairway's 
+expertise and customer service, will you please send them 
+my way?
+{% endblock %}

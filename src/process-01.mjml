@@ -1,0 +1,17 @@
+{% extends '_process.mjml' %}
+{% set localColorPrimary = data.color.blue %}
+{% set localColorAlternate = data.color.blueDark1 %}
+{% set localRecipientEmail = data.salesforce.borrowerEmail %}
+
+{% block copy %}
+{{data.salesforce.borrowerFirstName}},
+<br><br>
+I wanted to let you know that your loan application for 
+<em>{{ data.salesforce.propertyAddress }}</em> has been submitted 
+to processing. Once we have verified your information, 
+the loan file will be sent to the underwriter for approval.
+<br><br>
+Fairway is going to keep you and both of the real estate 
+agents up-to-date with emails throughout the loan process. 
+Please free to contact me with questions at any time!
+{% endblock %}
