@@ -3,11 +3,17 @@
 {% set localColorAlternate = data.color.greenDark1 %}
 {% set localRecipientEmail = data.salesforce.buyersEmail %}
 
+{% block emailPreview %}
+{{data.salesforce.buyersFirstName}},
+I wanted to let you know that {{ data.salesforce.borrowerName}}'s 
+loan application for the...
+{% endblock %}
+
 {% block copy %}
 {{data.salesforce.buyersFirstName}},
 <br><br>
 I wanted to let you know that {{data.salesforce.borrowerName}}'s 
-loan application for the purchase of <em>{{data.salesforce.propertyAddress}}</em> 
+loan application for <em>{{data.salesforce.propertyAddress}}</em> 
 has been fully approved and is clear to close! Be sure to call
 {{data.salesforce.borrowerFirstName}} and tell them the good news.
 {% endblock %}

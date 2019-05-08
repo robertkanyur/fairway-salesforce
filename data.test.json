@@ -8,9 +8,20 @@
       "phone": "480-703-3131",
       "nmls": "249017",
       "title": "Area Manager",
-      "recipientEmail": "9rx33xgd@gmail.com",
-      "recipientName": "Alex",
-      "mailing": "17851 N. 85th St. #250 – Scottsdale, AZ 85255"
+      "email": "rj.keilen@fairwaymc.com",
+      "mailing": "17851 N. 85th St. #250 – Scottsdale, AZ 85255",
+      "mailing1": "17851 N. 85th St. #250",
+      "mailing2": "Scottsdale, AZ 85255",
+      "app": "https://mobile.fairwaynow.com/borrower/signup/rj@fairwaymc.com",
+      "borrowerName": "Alex Anderson",
+      "borrowerFirstName": "Alex",
+      "borrowerEmail": "9rx33xgd@gmail.com",
+      "borrowerPhone": "888-888-8888",
+      "propertyAddress": "1234 Main Street",
+      "sellersFirstName": "Christina",
+      "sellersEmail": "christina@agency.com",
+      "buyersFirstName": "Brian",
+      "buyersEmail": "brian@agency.com"
     }
   }
 }

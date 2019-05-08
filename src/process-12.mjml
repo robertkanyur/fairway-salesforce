@@ -3,6 +3,10 @@
 {% set localColorAlternate = data.color.tealDark1 %}
 {% set localRecipientEmail = '' %}
 
+{% block emailPreview %}
+Post-closing congratulation emails have been sent to the borrower and...
+{% endblock %}
+
 {% block copy %}
 Post-closing congratulation emails have been sent to the borrower 
 and both agents for <em>{{data.salesforce.propertyAddress}}</em>.

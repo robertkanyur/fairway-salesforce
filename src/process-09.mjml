@@ -3,6 +3,11 @@
 {% set localColorAlternate = data.color.tealDark1 %}
 {% set localRecipientEmail = data.salesforce.borrowerEmail %}
 
+{% block emailPreview %}
+{{data.salesforce.borrowerFirstName}}, Congratulations on a 
+successful closing! It has been...
+{% endblock %}
+
 {% block copy %}
 {{data.salesforce.borrowerFirstName}},
 <br><br>

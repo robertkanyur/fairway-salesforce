@@ -3,6 +3,11 @@
 {% set localColorAlternate = data.color.blueDark1 %}
 {% set localRecipientEmail = data.salesforce.sellersEmail %}
 
+{% block emailPreview %}
+{{data.salesforce.sellersFirstName}}, I hope this email finds you 
+having a great week so...
+{% endblock %}
+
 {% block copy %}
 {{data.salesforce.sellersFirstName}},
 <br><br>

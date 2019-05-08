@@ -3,6 +3,10 @@
 {% set localColorAlternate = data.color.blueDark1 %}
 {% set localRecipientEmail = data.salesforce.borrowerEmail %}
 
+{% block emailPreview %}
+I wanted to let you know that your loan application for...
+{% endblock %}
+
 {% block copy %}
 {{data.salesforce.borrowerFirstName}},
 <br><br>

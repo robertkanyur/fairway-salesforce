@@ -22,10 +22,19 @@
     </mj-style>
   </mj-head>
   <mj-body background-color="{{ localColorPrimary }}">
+    <mj-section>
+      <mj-column>
+        <mj-text color="{{localColorPrimary}}"
+                 font-size="1px"
+                 line-height="1px"
+                 align="center"
+        >{% block emailPreview %}{% endblock %}</mj-text>
+      </mj-column>
+    </mj-section>
 
     <mj-section>
       <mj-column>
-        <mj-spacer height="60px" />
+        <mj-spacer height="35px" />
       </mj-column>
     </mj-section>
 
