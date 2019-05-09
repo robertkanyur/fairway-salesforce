@@ -21,13 +21,29 @@
       }
     </mj-style>
   </mj-head>
-  <mj-body background-color="{{ data.color.white }}">
+  <mj-body background-color="{{ data.color.white }}"
+  >
     <mj-section>
       <mj-column>
-        <mj-spacer height="50px">
+        <mj-text color="{{data.color.white}}"
+                font-size="1px"
+                line-height="1px"
+                align="center"
+        >{% block emailPreview %}{% endblock %}</mj-text>
+      </mj-column>
+    </mj-section>
+
+    <mj-section>
+      <mj-column>
+        <mj-spacer height="25px">
       </mj-column>
     </mj-section>
     <mj-wrapper background-color="{{data.color.grayLight2}}"
+                border-radius="10px"
+                border-left="40px solid {{data.color.white}}"
+                border-right="40px solid {{data.color.white}}"
+                padding-left="40px"
+                padding-right="40px"
     >
       <mj-section>
         <mj-column padding="30px 0"
@@ -48,18 +64,23 @@
       </mj-section>
       <mj-section>
         <mj-column>
-          <mj-spacer height="60px"></mj-spacer>
+          <mj-spacer height="40px"></mj-spacer>
         </mj-column>
       </mj-section>
       <mj-section>
         <mj-column width="400px">
           <mj-text font-family="Georgia, serif"
-                   font-size="48px"
-                   padding-bottom="40px"
+                   font-size="36px"
+                   line-height="48px"
+                   padding-bottom="10px"
           >
             {% block headline %}{% endblock %}
           </mj-text>
           <mj-text font-family="Georgia, serif"
+                   font-size="19px"
+                   line-height="25px"
+                   color="{{data.color.grayLight3}}"
+                   padding-bottom="52px"
           >
             {% block copy %}{% endblock %}
           </mj-text>
@@ -70,6 +91,7 @@
           <mj-image src="{{data.global.prefix}}/holiday-memorial-02.gif"
                     width="233px"
           />
+          <mj-spacer height="40px"></mj-spacer>
         </mj-column>
       </mj-section>
     </mj-wrapper>
@@ -77,7 +99,7 @@
                 padding-top="0"
     >
       <mj-section background-color="{{ data.color.white }}"
-                  padding="40px 0 0"
+                  padding="25px 0 40px"
       >
         <mj-column vertical-align="middle"
                   width="120px"

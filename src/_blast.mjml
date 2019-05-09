@@ -37,8 +37,6 @@
                  padding="0 40px 30px"
       >
         <mj-text>
-          Dear {{ data.salesforce.recipientName }},
-          <br><br>
           {{ data.copy.template.content | safe }}
         </mj-text>
       </mj-column>
@@ -103,7 +101,7 @@
             {{ data.global.unsubscribeOne | safe }}{{ data.salesforce.recipientEmail }}{{ data.global.unsubscribeTwo | safe }}
             <br>
             <br>
-            {{ data.salesforce.mailing }}
+            {{ data.salesforce.mailing1 }} - {{ data.salesforce.mailing2 }}
           </mj-text>
         </mj-column>
       </mj-section>

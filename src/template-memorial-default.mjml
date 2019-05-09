@@ -1,5 +1,9 @@
 {% extends '_holiday-memorial.mjml' %}
 
+{% block emailPreview %}
+Today we pause in gratitude for our nation, and to remember those...
+{% endblock %}
+
 {% block headline %}
 Celebrating freedom.
 {% endblock %}

@@ -22,6 +22,11 @@
       "sellersFirstName": "{!MtgPlanner_CRM__Transaction_Property__c.MtgPlanner_CRM__Realtor_Listing_Agent_First_Name__c}",
       "buyersEmail": "{!MtgPlanner_CRM__Transaction_Property__c.Jungo_LOS__Realtor_Buying_Agent_Email__c}",
       "buyersFirstName": "{!MtgPlanner_CRM__Transaction_Property__c.MtgPlanner_CRM__Realtor_Buying_Agent_First_Name__c}"
+    },
+    "copy": {
+      "template": {
+        "content": "Your Content Here"
+      }
     }
   }
 }

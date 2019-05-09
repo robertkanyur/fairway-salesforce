@@ -13,6 +13,7 @@
       "slate": "#2f4244",
       "slateDark0": "#234e5a",
       "slateDark1": "#2a3b3d",
+      "grayLight3": "#818181",
       "grayLight2": "#f8f9f9",
       "grayLight1": "#ededed",
       "grayLight0": "#b2b2b2",
@@ -35,7 +36,6 @@
     },
     "copy": {
       "template": {
-        "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer volutpat, purus aliquet posuere finibus, erat ante volutpat odio, vitae rhoncus nunc felis vitae nibh.<br><br>Aliquam erat volutpat. Nullam ullamcorper tortor eget lectus porttitor laoreet. Curabitur aliquam, lacus hendrerit congue lobortis, dolor dui accumsan neque, ut ullamcorper justo neque in sapien.<br><br>Donec quam mauris, blandit eu interdum lobortis, interdum sed lorem. Curabitur hendrerit nulla in semper pulvinar."
       }
     }
   }
