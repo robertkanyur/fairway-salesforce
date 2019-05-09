@@ -1,0 +1,11 @@
+--
+
+{!User.Name}
+{!User.Title}
+
+{!User.Phone}
+NMLS #{!User.MtgPlanner_CRM__NMLS_New__c}
+
+We are vitally concerned with your privacy on the internet. You have received this message as a Fairway Independent Mortgage Corporation customer or subscriber. To opt-out of further email correspondence from Fairway, please visit http://unsubscribe.fairway321.com.
+
+{!User.Address}

@@ -4,6 +4,7 @@
 {% set localRecipientEmail = data.salesforce.borrowerEmail %}
 
 {% block emailPreview %}
+{{data.salesforce.borrowerFirstName}}, 
 I wanted to let you know that your loan application for...
 {% endblock %}
 
