@@ -5,7 +5,7 @@ Today we pause in gratitude for our nation, and to remember those...
 {% endblock %}
 
 {% block headline %}
-Celebrating freedom.
+We give our thanks.
 {% endblock %}
 
 {% block copy %}

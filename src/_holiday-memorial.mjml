@@ -2,7 +2,7 @@
   <mj-head>
     <mj-title>Email Preview</mj-title>
     <mj-attributes>
-      <mj-body width="600px" />
+      <mj-body width="700px" />
       <mj-section padding="0" />
       <mj-column padding="0" />
       <mj-image padding="0" />
@@ -17,149 +17,119 @@
     </mj-attributes>
     <mj-style inline="inline">
       .unsubscribe-link{
-        color: {{ data.color.white }};
+        color: {{ data.color.grayLight0 }};
       }
     </mj-style>
   </mj-head>
-  <mj-body background-color="{{ data.color.white }}"
+  <mj-body background-color="{{ data.color.white }}
   >
-    <mj-section>
+    <mj-section padding-bottom="20px">
       <mj-column>
         <mj-text color="{{data.color.white}}"
-                font-size="1px"
-                line-height="1px"
-                align="center"
+                 font-size="1px"
+                 line-height="1px"
+                 align="center"
         >{% block emailPreview %}{% endblock %}</mj-text>
       </mj-column>
     </mj-section>
 
-    <mj-section>
-      <mj-column>
-        <mj-spacer height="25px">
-      </mj-column>
-    </mj-section>
-    <mj-wrapper background-color="{{data.color.grayLight2}}"
-                border-radius="10px"
-                border-left="40px solid {{data.color.white}}"
-                border-right="40px solid {{data.color.white}}"
-                padding-left="40px"
-                padding-right="40px"
-    >
-      <mj-section>
-        <mj-column padding="30px 0"
-                   width="49px"
-        >
-          <mj-image src="{{data.global.prefix}}/holiday-memorial-icon.png"
-                    width="49px"
-          />
-        </mj-column>
-      </mj-section>
-      <mj-section>
-        <mj-column width="402px"
-        >
-          <mj-image src="{{data.global.prefix}}/holiday-memorial-01.gif"
-                    width="402px"
-          />
-        </mj-column>
-      </mj-section>
-      <mj-section>
-        <mj-column>
-          <mj-spacer height="40px"></mj-spacer>
-        </mj-column>
-      </mj-section>
-      <mj-section>
-        <mj-column width="400px">
-          <mj-text font-family="Georgia, serif"
-                   font-size="36px"
-                   line-height="48px"
-                   padding-bottom="10px"
-          >
-            {% block headline %}{% endblock %}
-          </mj-text>
-          <mj-text font-family="Georgia, serif"
-                   font-size="19px"
-                   line-height="25px"
-                   color="{{data.color.grayLight3}}"
-                   padding-bottom="52px"
-          >
-            {% block copy %}{% endblock %}
-          </mj-text>
-        </mj-column>
-      </mj-section>
-      <mj-section>
-        <mj-column>
-          <mj-image src="{{data.global.prefix}}/holiday-memorial-02.gif"
-                    width="233px"
-          />
-          <mj-spacer height="40px"></mj-spacer>
-        </mj-column>
-      </mj-section>
-    </mj-wrapper>
-    <mj-wrapper background-color="{{ data.color.white }}"
-                padding-top="0"
-    >
-      <mj-section background-color="{{ data.color.white }}"
-                  padding="25px 0 40px"
+    <mj-section padding-left="20px"
+                padding-right="20px">
+      <mj-wrapper border="20px solid {{data.color.teal}}"
+                  padding-left="20px"
+                  padding-right="20px"
       >
-        <mj-column vertical-align="middle"
-                  width="120px"
+        <mj-section padding-top="40px">
+          <mj-column width="500px"
+          >
+            <mj-text font-weight="bold"
+                    font-size="60px"
+                    line-height="72px"
+                    color="{{data.color.teal}}"
+            >{% block headline %}{%endblock %}</mj-text>
+          </mj-column>
+        </mj-section>
+
+        <mj-section>
+          <mj-column width="500px">
+            <mj-text font-size="24px"
+                    line-height="36px"
+                    padding-bottom="40px"
+                    color="{{data.color.grayLight3}}"
+            >{% block copy %}{% endblock %}</mj-text>
+          </mj-column>
+        </mj-section>
+
+        <mj-section padding-bottom="50px">
+          <mj-column width="500px">
+            <mj-image src="{{data.global.prefix}}/holiday-memorial-01.jpg"
+                      width="500px" />
+            </mj-image>
+          </mj-column>
+        </mj-section>
+
+        <mj-section background-color="{{ data.color.white }}"
+                    padding-bottom="60px"
         >
-          <mj-image src="{{ data.global.prefix }}/profile-{{ data.salesforce.nmls }}-round.png"
+          <mj-column vertical-align="middle"
+                    width="120px"
+          >
+            <mj-image src="{{ data.global.prefix }}/profile-{{ data.salesforce.nmls }}-round.png"
+                      align="center"
+                      width="80px"
+                      border-radius="50%"></mj-image>
+          </mj-column>
+          <mj-column vertical-align="middle"
+                    width="160px"
+          >
+
+            <mj-text line-height="24px"
                     align="center"
-                    width="80px"
-                    border-radius="50%"></mj-image>
-        </mj-column>
-        <mj-column vertical-align="middle"
-                  width="160px"
-        >
-
-          <mj-text line-height="24px"
-                  align="center"
+            >
+              <strong>{{ data.salesforce.name }}</strong>
+              <br>
+              {{ data.salesforce.title }}
+            </mj-text>
+          </mj-column>
+          <mj-column vertical-align="middle"
+                    width="160px"
           >
-            <strong>{{ data.salesforce.name }}</strong>
-            <br>
-            {{ data.salesforce.title }}
-          </mj-text>
-        </mj-column>
-        <mj-column vertical-align="middle"
-                   width="160px"
-        >
-          <mj-text line-height="24px"
-                  align="center"
-          >
-            <strong>{{ data.salesforce.phone }}</strong>
-            <br>
-            NMLS #{{ data.salesforce.nmls }}
-          </mj-text>
-        </mj-column>
-      </mj-section>
-    </mj-wrapper>
+            <mj-text line-height="24px"
+                    align="center"
+            >
+              <strong>{{ data.salesforce.phone }}</strong>
+              <br>
+              NMLS #{{ data.salesforce.nmls }}
+            </mj-text>
+          </mj-column>
 
-    <mj-wrapper full-width="full-width"
-                background-color="{{data.color.tealDark2}}"
-    >
-      <mj-section padding-top="40px">
-        <mj-column width="600px"
-                    padding="0 40px">
-          <mj-text color="{{ data.color.white }}"
+        </mj-section>
+      </mj-wrapper>
+    </mj-section>
+
+    <mj-section padding="20px 0 0">
+      <mj-column width="600px"
+                  padding="0 40px">
+        <mj-text color="{{ data.color.grayLight0 }}"
                 align="center"
                 font-size="11px"
                 line-height="15px"
                 padding="0 0 20px"
-          >
-            {{ data.global.disclaimer }}
-            {{ data.global.unsubscribeOne | safe }}{{ data.salesforce.recipientEmail }}{{ data.global.unsubscribeTwo | safe }}
-            <br>
-            <br>
-            {{ data.salesforce.mailing }}
-          </mj-text>
-        </mj-column>
-      </mj-section>
-      <mj-section padding-bottom="40px">
-        <mj-column>
-          <mj-image width="126px" src="{{ data.global.prefix }}/holiday-memorial-logo.png"></mj-image>
-        </mj-column>
-      </mj-section>
-    </mj-wrapper>
+        >
+          {{ data.global.disclaimer }}
+          {{ data.global.unsubscribeOne | safe }}{{ data.salesforce.recipientEmail }}{{ data.global.unsubscribeTwo | safe }}
+          <br>
+          <br>
+          {{ data.salesforce.mailing1 }} - {{ data.salesforce.mailing2 }}
+        </mj-text>
+      </mj-column>
+    </mj-section>
+
+    <mj-section padding-bottom="60px">
+      <mj-column>
+        <mj-image width="122px" src="{{ data.global.prefix }}/clean-logo.png"></mj-image>
+      </mj-column>
+    </mj-section>
+
   </mj-body>
 </mjml>
