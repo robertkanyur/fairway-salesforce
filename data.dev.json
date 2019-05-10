@@ -21,7 +21,8 @@
       "sellersFirstName": "Christina",
       "sellersEmail": "christina@agency.com",
       "buyersFirstName": "Brian",
-      "buyersEmail": "brian@agency.com"
+      "buyersEmail": "brian@agency.com",
+      "contactFirstName": "Andrew"
     },
     "copy": {
       "template": {

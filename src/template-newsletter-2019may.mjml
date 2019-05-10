@@ -2,12 +2,12 @@
 
 {% set localDateString = '2019may' %}
 
-{% block previewText %}
+{% block emailPreview %}
 Two positive trends have started to emerge that impact the Spring...
 {% endblock %}
 
 {% block headline %}
-Hello, {{ data.salesforce.recipientName }}
+Hello, {{ data.salesforce.contactFirstName }}
 {% endblock %}
 
 {% block intro %}

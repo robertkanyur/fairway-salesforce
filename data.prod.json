@@ -4,15 +4,14 @@
       "prefix": "https://d3g7yydxj8payf.cloudfront.net"
     },
     "salesforce": {
-      "name": "{!User.Name}",
-      "phone": "{!User.Phone}",
-      "nmls": "{!User.MtgPlanner_CRM__NMLS_New__c}",
-      "title": "{!User.Title}",
-      "email": "{!User.Email}",
-      "mailing": "{!User.Address}",
-      "mailing1": "{!User.Address_Line_1__c}",
-      "mailing2": "{!User.Address_Line_2__c}",
-      "app": "{!User.FairwayNOW__c}",
+      "name": "{!MtgPlanner_CRM__Transaction_Property__c.OwnerFullName}",
+      "phone": "{!MtgPlanner_CRM__Transaction_Property__c.OwnerPhone}",
+      "nmls": "{!MtgPlanner_CRM__Transaction_Property__c.OwnerNMLS__c}",
+      "title": "{!MtgPlanner_CRM__Transaction_Property__c.OwnerTitle}",
+      "email": "{!MtgPlanner_CRM__Transaction_Property__c.OwnerEmail}",
+      "mailing1": "{!MtgPlanner_CRM__Transaction_Property__c.Owner_Address_Line_1__c}",
+      "mailing2": "{!MtgPlanner_CRM__Transaction_Property__c.Owner_Address_Line_2__c}",
+      "app": "{!MtgPlanner_CRM__Transaction_Property__c.Owner_FairwayNOW__c}",
       "borrowerName": "{!MtgPlanner_CRM__Transaction_Property__c.MtgPlanner_CRM__Borrower_Name__c}",
       "borrowerFirstName": "{!MtgPlanner_CRM__Transaction_Property__c.MtgPlanner_CRM__Borrower_First_Name__c}",
       "borrowerEmail": "{!MtgPlanner_CRM__Transaction_Property__c.Borrower_Email__c}",
@@ -21,7 +20,8 @@
       "sellersEmail": "{!MtgPlanner_CRM__Transaction_Property__c.Jungo_LOS__Realtor_Listing_Agent_Email__c}",
       "sellersFirstName": "{!MtgPlanner_CRM__Transaction_Property__c.MtgPlanner_CRM__Realtor_Listing_Agent_First_Name__c}",
       "buyersEmail": "{!MtgPlanner_CRM__Transaction_Property__c.Jungo_LOS__Realtor_Buying_Agent_Email__c}",
-      "buyersFirstName": "{!MtgPlanner_CRM__Transaction_Property__c.MtgPlanner_CRM__Realtor_Buying_Agent_First_Name__c}"
+      "buyersFirstName": "{!MtgPlanner_CRM__Transaction_Property__c.MtgPlanner_CRM__Realtor_Buying_Agent_First_Name__c}",
+      "contactFirstName": "{!Contact.FirstName}"
     },
     "copy": {
       "template": {

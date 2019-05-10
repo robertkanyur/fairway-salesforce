@@ -27,8 +27,18 @@
     <mj-wrapper background-color="{{data.color.slateDark0}}"
                 background-url="{{data.global.prefix}}/newsletter-bg.jpg"
                 background-size="cover"
-                padding="0 25px"
+                padding="0 5px"
     >
+    <mj-section>
+      <mj-column>
+        <mj-text color="{{data.color.slateDark0}}"
+                 font-size="1px"
+                 line-height="1px"
+                 align="center"
+        >{% block emailPreview %}{% endblock %}</mj-text>
+      </mj-column>
+    </mj-section>
+
       <mj-section>
         <mj-column padding="40px 0 25px">
           <mj-image src="{{data.global.prefix}}/newsletter-icon.png"
@@ -139,7 +149,7 @@
                 full-width="full-width"
     >
       <mj-section background-color="{{ data.color.white }}"
-                  padding="40px 0 0"
+                  padding="40px 40px 0"
       >
         <mj-column vertical-align="middle"
                   width="120px"
